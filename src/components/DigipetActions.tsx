@@ -1,3 +1,5 @@
+import { StyledButton } from "../styles";
+
 /**
  * Represents data which is used to make the UI for a DigipetAction.
  */
@@ -22,9 +24,9 @@ function DigipetActions({ actions }: Props) {
     <>
       {actions.map(({ name, handler = defaultHandler }) => (
         // using destructuring with a default value
-        <button key={name} onClick={handler}>
+        <StyledButton key={name} onClick={handler}>
           {name}
-        </button>
+        </StyledButton>
       ))}
     </>
   );
