@@ -87,7 +87,7 @@ function App() {
           },
           { 
             name: "Set rehomed digipet free!",
-            handler: () => loadDataFromEndpoint("/digipet/rehome"),
+            handler: () => loadDataFromEndpoint("/digipet/setfree"),
           },
         ]}
       />
